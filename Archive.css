@@ -1,0 +1,120 @@
+/* Import de font - Poppins do Google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+/* Controle de variáveis */
+:root{
+    --BgBody  :#FFDB4A;
+    --BgHeader:#B8E4FF;
+    --BgFooter:#A53DFF;
+}
+
+/* Estilo da página */
+body{
+    background: var(--BgBody);
+}
+
+main {
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    max-width: 1290px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+article {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 43px;
+}
+
+h3 {
+    font-family: Poppins, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+}
+
+p, .text {
+    font-family: Nunito, sans-serif;
+    font-size: 1vw;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.code-css {
+    background-color: var(--BgFooter);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    width: 350px;
+}
+
+figure{
+    display: flex;
+}
+
+.imageExample {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.fig-retina {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.img{
+    text-align: center;
+}
+
+/* Inicio de Flex box */
+.box-container {
+    height: 500px;
+    display: flex;
+}
+
+.box1 {
+    background: var(--BgFooter);
+    height: 25%;
+    width: 25%;
+    margin: 15px;
+}
+
+.box1 p {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+}
+
+.box2 {
+    background: var(--BgHeader);
+    height: 25%;
+    width: 25%;
+    margin: 15px;
+}
+.box2 p {
+    text-align: center;
+    font-size: 28px;
+    color: #A53DFF;
+
+}
+
+/* Media queries - formatação para mobile */
+
+/* Quando a altura do dispositivo for igual ou maior que 800px */
+@media(max-width: 800px) {
+    p{
+        font-size: 18px;
+    }
+
+    .code-css {
+        max-width: 270px;
+    }
+}

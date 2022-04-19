@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/monitor.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/Archive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header class="context-header">
+            <!-- Criar menu com logo aqui -->
+        </header>
+        <section class="content-section">
+            <article class="archive-mediaQueries">
+                <h1>Na prática</h1>
+                <legend><em>Aprendendo com <strong>Free Code Camp</strong></em></legend>
+                <hr>
+                <h3>Criar Media Queries</h3>
+                <p>
+                    Media Queries são uma nova técnica introduzida no CSS3 que altera a apresentação do conteúdo
+                    baseando-se nas diferentes dimensões da janela de exibição (viewport). A janela de exibição é a área
+                    de uma página web visível para o usuário, e é diferente dependendo do dispositivo utilizado para
+                    acessar o site.
+                </p>
+                <p>
+                    Media Queries consistem em um media type. Se esse media type corresponder ao tipo de dispositivo no
+                    qual o documento é exibido, os estilos são aplicados. Você pode ter quantos seletores e estilos
+                    quiser dentro de sua media query.
+                </p>
+                <p>
+                    Aqui está um exemplo de media query que retorna o conteúdo quando a largura do dispositivo é menor
+                    ou igual a 100px:
+                </p>
+                <div class="code-css">
+                    @media (max-width: 100px) { /* CSS Rules */ }
+                </div>
+                <p>
+                    e a media query a seguir retorna o conteúdo quando a altura do dispositivo é maior ou igual a 350px:
+                </p>
+                <div class="code-css">
+                    @media (min-height: 350px) { /* CSS Rules */ }
+                </div>
+            </article>
+
+            <!-- Artigo 02 - Imagem responsiva -->
+            <article>
+                <h3>Tornar uma imagem responsiva</h3>
+                <p>
+                    Tornar imagens responsivas com CSS é muito simples. Você só precisa adicionar essas propriedades a
+                    uma imagem:
+                </p>
+                <div class="code-css">
+                    img {
+                    max-width: 100%;
+                    height: auto;
+                    }
+                </div>
+                <p>
+                    A propriedade max-width de valor 100% garantirá que a imagem nunca seja mais larga do que o
+                    contêiner em que está inserida. A propriedade height de valor auto, por sua vez, fará com que a
+                    imagem mantenha sua proporção original.
+                </p>
+                <figure>
+                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
+                </figure>
+            </article>
+
+            <!-- Artigo 03 - Imagem retina -->
+            <article>
+                <h3>Usar imagem retina para telas de resolução mais alta!</h3>
+                <p>
+                    Com o aumento dos dispositivos conectados à Internet, seus tamanhos e especificações variam
+                    bastante. As telas que esses dispositivos usam podem ser diferentes externa e internamente. A
+                    densidade de pixels é um aspecto que pode ser diferente de um dispositivo para outro e essa
+                    densidade é conhecida como Pixel Por Polegada (PPI) ou pontos por polegada (DPI). A tela mais famosa
+                    é aquela conhecida como "Tela Retina" nos notebooks Apple MacBook Pro mais recentes e, nos últimos
+                    tempos, em computadores iMac. Devido à diferença na densidade de pixels entre uma tela "Retina" e
+                    "não Retina", algumas imagens que não foram feitas com uma tela de alta resolução em mente podem
+                    parecer "pixeladas" quando renderizadas em uma tela de alta resolução.
+                </p>
+                <p>
+                    A maneira mais simples de fazer com que suas imagens apareçam de maneira adequada em telas de alta
+                    resolução, como a "tela retina" do MacBook Pro, é definir os valores de largura (width) e altura
+                    (height) da imagem para a metade do arquivo original. Aqui vemos um exemplo de imagem que usa apenas
+                    metade da altura e largura originais:
+                </p>
+                <div class="code-css">
+                    img {
+                    height: 100px;
+                    width: 100px;
+                    }
+                </div>
+                <div class="img">
+                    <figure>
+                        <img class="fig-retina"
+                            src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg"
+                            alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">
+                    </figure>
+                    <figcaption>Exemplo de figura em modo retina</figcaption>
+                </div>
+            </article>
+
+            <!-- Artigo 03 - Tipografia responsiva -->
+            <article>
+                <h3>Tipografia responsiva</h3>
+                <p>
+                    Em vez de usar em ou px para dimensionar o texto, você pode usar unidades relativas à viewport para
+                    ter uma tipografia responsiva. As unidades de viewport, como as porcentagens, são unidades
+                    relativas, mas são baseadas em itens diferentes. As unidades de viewport são relativas às dimensões
+                    da viewport (largura ou altura) de um dispositivo e as porcentagens são relativas ao tamanho do
+                    elemento pai.
+                </p>
+                <div class="text">
+                    <strong>As quatro unidades de viewport são:</strong>
+                    <ul><li>vw (largura da viewport): 10vw seria 10% da largura da viewport.</li></ul>
+                    <ul><li>vh (altura da viewport): 3vh seria 3% da altura da viewport.</li></ul>
+                    <ul><li>vmin (mínimo da viewport): 70vmin seria 70% da menor dimensão da viewport (altura ou largura).</li></ul>
+                    <ul><li>vmax (máximo da viewport): 100vmax seria 100% da maior dimensão da viewport (altura ou largura).</li></ul>
+                </div>
+            </article>
+
+            <!-- Flex Box -->
+            <article>
+                <h3>Usar display: flex para posicionar duas caixas</h3>
+                <p>
+                    Esta seção utiliza estilos de desafio alternados para mostrar como usar o CSS para posicionar elementos de maneira flexível. Primeiro, o desafio explicará a teoria. Em seguida, aplicaremos o conceito aprendido em um desafio prático usando um tweet simples.
+                </p>
+                <p>
+                    Colocando a propriedade display: flex; em um elemento permite que você use outras propriedades flex para construir uma página responsiva.
+                </p>
+                <div class="box-container">
+                    <div class="box1"><p>BOX 1</p></div>
+                    <div class="box2"><p>BOX 2</p></div>
+                </div>
+            </article>
+
+            <!-- Criando Tweet embed -->
+            <article>
+                
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
