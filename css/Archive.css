@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 /* Controle de variáveis */
-:root{
-    --BgBody  :#FFDB4A;
-    --BgHeader:#B8E4FF;
-    --BgFooter:#A53DFF;
+:root {
+    --BgBody: #FFDB4A;
+    --BgHeader: #B8E4FF;
+    --BgFooter: #A53DFF;
 }
 
 /* Estilo da página */
-body{
+body {
     background: var(--BgBody);
 }
 
@@ -18,7 +18,7 @@ main {
     background: #fff;
     box-sizing: border-box;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     max-width: 1290px;
     margin: 25px auto;
     padding: 15px;
@@ -37,7 +37,9 @@ h3 {
     font-size: 1.2vw;
 }
 
-p, .text {
+p,
+.text,
+li {
     font-family: Nunito, sans-serif;
     font-size: 1vw;
     text-align: justify;
@@ -53,7 +55,7 @@ p, .text {
     width: 350px;
 }
 
-figure{
+figure {
     display: flex;
 }
 
@@ -70,7 +72,7 @@ figure{
     margin: auto;
 }
 
-.img{
+.img {
     text-align: center;
 }
 
@@ -79,6 +81,8 @@ figure{
     height: 500px;
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
+    /* alinha os itens ao centro do container pai */
 }
 
 .box1 {
@@ -100,6 +104,7 @@ figure{
     width: 15%;
     margin: 15px;
 }
+
 .box2 p {
     text-align: center;
     font-size: 28px;
@@ -124,7 +129,7 @@ figure{
 
 .card {
     width: 350px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     box-sizing: border-box;
     border-radius: 15px;
     padding: 15px;
@@ -138,13 +143,15 @@ figure{
 }
 
 .skills p {
-    margin:10px;
+    margin: 10px;
     padding: 10px;
     text-align: left;
     align-items: center;
 }
 
-.skills a { color: var(--BgBody);}
+.skills a {
+    color: var(--BgBody);
+}
 
 .flex-card {
     display: flex;
@@ -156,13 +163,100 @@ figure{
     background-color: #A53DFF;
     color: #fff;
     cursor: pointer;
+    top: 25px;
+    float: top;
+}
+
+/* trabalhando com listas ordenadas */
+.align-elements {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.align-start {
+    background-color: dodgerblue;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.maniaco {
+    width: 150px;
+    padding: 25px;
+}
+
+.conten-list li {
+    padding-bottom: 35px;
+}
+
+/* Exemplo de flex-wrap */
+
+
+#box-container {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#box-container-nowrap {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+#box-container-reverse {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 150px;
+}
+
+#box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 150px;
+}
+
+#box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 150px;
+}
+
+#box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 150px;
+}
+
+#box-5 {
+    background-color: green;
+    width: 25%;
+    height: 150px;
+}
+
+#box-6 {
+    background-color: black;
+    width: 25%;
+    height: 150px;
 }
 
 /* Media queries - formatação para mobile */
 
 /* Quando a altura do dispositivo for igual ou maior que 800px */
 @media(max-width: 800px) {
-    p{
+    p {
         font-size: 18px;
     }
 

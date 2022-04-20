@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/monitor.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/pedido-online.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/Archive.css">
     <title>Document</title>
@@ -67,9 +67,9 @@
                     imagem mantenha sua proporção original.
                 </p>
                 <figure>
-                    <img src="/freeCode/img/img01.jpg" class="imageExample" alt="Sistema solar">
-                    <img src="/freeCode/img/img02.jpg" class="imageExample" alt="Sistema solar">
-                    <img src="/freeCode/img/image03.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="img/img01.jpg" class="imageExample" alt="Imagens sobre tecnologia">
+                    <img src="img/img02.jpg" class="imageExample" alt="Imagens sobre tecnologia">
+                    <img src="img/image03.jpg" class="imageExample" alt="Imagens sobre tecnologia">
                 </figure>
             </article>
 
@@ -100,9 +100,7 @@
                 </div>
                 <div class="img">
                     <figure>
-                        <img class="fig-retina"
-                            src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg"
-                            alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">
+                        <img class="fig-retina" src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg" alt="freeCodeCamp sticker that says 'Because CamperBot Cares'">
                     </figure>
                     <figcaption>Exemplo de figura em modo retina</figcaption>
                 </div>
@@ -180,37 +178,42 @@
                     </p>
                     <ul>
                         <li>
-                            <span class="reference">flex-start:</span> alinha os itens no início do contêiner. Para linhas, os flex items são
+                            <span class="reference">flex-start:</span> alinha os itens no início do contêiner. Para
+                            linhas, os flex items são
                             empurrados para a esquerda do flex container. Para colunas, os flex items são empurrados
                             para o topo do flex container. Este é o alinhamento padrão se nenhum valor for especificado
                             para justify-content.
                         </li>
                         <li>
-                            <span class="reference">flex-end:</span> alinha itens no final do contêiner. Para linhas, os flex items são empurrados para
+                            <span class="reference">flex-end:</span> alinha itens no final do contêiner. Para linhas, os
+                            flex items são empurrados para
                             a direita do flex container. Para colunas, os flex items são empurrados para a parte
                             inferior do flex container.
                         </li>
                         <li>
-                            <span class="reference">space-between:</span> alinha os itens ao centro do eixo principal, com um espaçamento entre os
+                            <span class="reference">space-between:</span> alinha os itens ao centro do eixo principal,
+                            com um espaçamento entre os
                             itens. O primeiro item e o último são empurrados até a borda do flex container. Por exemplo,
                             quando a direção do flex container for em linha, o primeiro item fica do lado esquerdo do
                             contêiner e o último item fica no lado direito do contêiner. Então, o espaço restante é
                             distribuído igualmente para os demais itens.
                         </li>
                         <li>
-                            <span class="reference">space-around:</span> similar ao space-between mas os primeiros e últimos itens não ficam grudados
+                            <span class="reference">space-around:</span> similar ao space-between mas os primeiros e
+                            últimos itens não ficam grudados
                             nas bordas do flex container, o espaço é distribuído em torno de todos os itens com metade
                             do espaço em cada extremidade do flex container.
                         </li>
                         <li>
-                            <span class="reference">space-evenly:</span> distribui o espaço igualmente entre os flex items com um espaço completo em
+                            <span class="reference">space-evenly:</span> distribui o espaço igualmente entre os flex
+                            items com um espaço completo em
                             cada extremidade do flex container.
                         </li>
                     </ul>
                 </div>
                 <div class="flex-card">
                     <div class="card">
-                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+                        <img src="img/Perfil.png" class="profile-thumbnail">
 
                         <div class="profile-name">
                             <h3>Rafael Dantas</h3>
@@ -241,7 +244,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+                        <img src="img/Perfil.png" class="profile-thumbnail">
 
                         <div class="profile-name">
                             <h3>Rafael Dantas</h3>
@@ -272,7 +275,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+                        <img src="img/Perfil.png" alt="perfil" class="profile-thumbnail">
 
                         <div class="profile-name">
                             <h3>Rafael Dantas</h3>
@@ -303,6 +306,137 @@
                         </div>
                     </div>
                 </div>
+            </article>
+            <article>
+                <h3>Alinhar elementos usando <strong>Align-items</strong></h3>
+                <p>
+                    A propriedade align-items é similar à justify-content. Lembre que a propriedade justify-content
+                    alinhou os flex items ao longo do eixo principal. Para linhas, o eixo principal é uma linha
+                    horizontal e para colunas é uma linha vertical.
+                </p>
+                <p>
+                    Flex containers também têm um eixo transversal que é o oposto do eixo principal. Para linhas, o eixo
+                    transversal é vertical, e para colunas, o eixo transversal é horizontal.
+                </p>
+                <p>
+                    O CSS oferece a propriedade align-items para alinhar os flex items ao longo do eixo transversal.
+                    Para linhas, ela indica ao CSS como empurrar os itens para cima ou para baixo dentro do container. E
+                    para uma coluna, como empurrar todos os itens para a esquerda ou direita dentro do container.
+                </p>
+
+                <p> Os valores disponíveis para <strong>align-items</strong> são: </p>
+                <div class="content-list">
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>flex-start</strong>: alinha os itens no início do container. Para linhas, os
+                                flex items são posicionados no topo do container. Para colunas, os flex items são
+                                posicionados à esquerda do container.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>flex-end</strong>: alinha os itens no final do container. Para linhas, todos os
+                                flex items são posicionados na parte inferior do container. Para colunas, os flex items
+                                são posicionados à direita do container.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>center</strong>: alinha os itens ao centro. Para linhas, os flex items são
+                                posicionados verticalmente (com espaços iguais acima e abaixo dos itens). Para colunas,
+                                os flex items são posicionados horizontalmente (com espaços iguais à esquerda e à
+                                direita dos itens).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>stretch</strong>: estica os itens para preencher o container. Por exemplo, itens
+                                posicionados em linhas são esticados para preencher o contêiner de cima a baixo. Este é
+                                o valor padrão se nenhum valor for especificado para a propriedade
+                                <strong>align-items</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>baseline</strong>: o posicionamento é realizado com base no texto dentro de cada
+                                flex item. A linha de base (baseline) é um conceito de textos. Pense nela como se fosse
+                                a linha em que as letras ficam apoiadas.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="content-wrap">
+                <h3>Flex-wrap para quebrar linhas ou colunas</h3>
+                <p>
+                    O CSS flexbox possui uma propriedade que permite dividir um contêiner flex em várias linhas (ou colunas). Por padrão, um flex container manterá todos os flex items juntos. Por exemplo, todos os flex items estarão lado a lado na mesma linha.
+                </p>
+                <p>
+                    No entanto, ao usar a propriedade <strong>flex-wrap</strong>, informamos ao CSS para quebrar essa linha. Isso significa que os itens adicionais serão movidos para uma nova linha ou coluna. O ponto onde essa quebra acontece depende do tamanho dos itens e do tamanho do flex conteiner.
+                </p>
+                <p>O CSS oferece as seguintes opções para a direção da quebra de linha:</p>
+                <div class="content-list">
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>nowrap</strong>: esta é a configuração padrão e não cria novas linhas ou colunas.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>wrap</strong>: cria novas linhas de cima para baixo se os itens estiverem dispostos em linhas e da esquerda para a direita se estiverem em colunas.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>wrap-reverse</strong>: cria novas linhas de baixo para cima se os itens estiverem dispostos em linhas e da direita para a esquerda se estiverem em colunas.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <p>Exemplo de <strong>flex-wrap: wrap</strong></p>
+                <p>Estilo padrão do navegador, quando o conteúdo não pode ser contido no interior da tag pai, ele quebra linha.</p>
+                <div id="box-container">
+                    <div id="box-1"></div>
+                    <div id="box-2"></div>
+                    <div id="box-3"></div>
+                    <div id="box-4"></div>
+                    <div id="box-5"></div>
+                    <div id="box-6"></div>
+                </div>
+                <p>Exemplo de <strong>flex-wrap: nowrap</strong></p>
+                <p>Este estilo comprime todos os elementos de modo que estes caibam dentro da linha do container pai.</p>
+                <div id="box-container-nowrap">
+                    <div id="box-1"></div>
+                    <div id="box-2"></div>
+                    <div id="box-3"></div>
+                    <div id="box-4"></div>
+                    <div id="box-5"></div>
+                    <div id="box-6"></div>
+                </div>
+                <p>Exemplo de <strong>flex-wrap: wrap-reverse</strong></p>
+                <p>Este estilo é o inverso do elemento wrap, comaçando pela parte inferior e terminando a superior.</p>
+                <div id="box-container-reverse">
+                    <div id="box-1"></div>
+                    <div id="box-2"></div>
+                    <div id="box-3"></div>
+                    <div id="box-4"></div>
+                    <div id="box-5"></div>
+                    <div id="box-6"></div>
+                </div>
+            </article>
+            <article>
+                <h3>Encolhendo itens com flex-shrink</h3>
+                <p>
+                    Até aqui, todas as propriedades nos desafios se aplicam ao flex container (o pai dos flex items). Porém, há várias propriedades úteis para os flex items.
+                </p>
+                <p>
+                    A primeira é a propriedade flex-shrink. Quando é usada, permite que um item encolha se o flex container for muito pequeno. Os itens encolhem quando a largura do contêiner pai é menor do que a soma das larguras de todos os flex items dentro dele.
+                </p>
+                <p>
+                    A propriedade flex-shrink recebe números como valor. Quanto maior o número, mais encolherá comparado a outros itens no contêiner. Por exemplo, se um item tem flex-shrink de valor 1 e o outro tem flex-shrink de valor 3, aquele com valor 3 vai encolher três vezes mais do que o outro.
+                </p>
             </article>
         </section>
     </main>
