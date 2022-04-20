@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/monitor.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/Archive.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/Archive.css">
     <title>Document</title>
 </head>
 
@@ -67,9 +67,9 @@
                     imagem mantenha sua proporção original.
                 </p>
                 <figure>
-                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
-                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
-                    <img src="/img/2907.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="/freeCode/img/img01.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="/freeCode/img/img02.jpg" class="imageExample" alt="Sistema solar">
+                    <img src="/freeCode/img/image03.jpg" class="imageExample" alt="Sistema solar">
                 </figure>
             </article>
 
@@ -120,31 +120,189 @@
                 </p>
                 <div class="text">
                     <strong>As quatro unidades de viewport são:</strong>
-                    <ul><li>vw (largura da viewport): 10vw seria 10% da largura da viewport.</li></ul>
-                    <ul><li>vh (altura da viewport): 3vh seria 3% da altura da viewport.</li></ul>
-                    <ul><li>vmin (mínimo da viewport): 70vmin seria 70% da menor dimensão da viewport (altura ou largura).</li></ul>
-                    <ul><li>vmax (máximo da viewport): 100vmax seria 100% da maior dimensão da viewport (altura ou largura).</li></ul>
+                    <ul>
+                        <li>vw (largura da viewport): 10vw seria 10% da largura da viewport.</li>
+                    </ul>
+                    <ul>
+                        <li>vh (altura da viewport): 3vh seria 3% da altura da viewport.</li>
+                    </ul>
+                    <ul>
+                        <li>vmin (mínimo da viewport): 70vmin seria 70% da menor dimensão da viewport (altura ou
+                            largura).</li>
+                    </ul>
+                    <ul>
+                        <li>vmax (máximo da viewport): 100vmax seria 100% da maior dimensão da viewport (altura ou
+                            largura).</li>
+                    </ul>
                 </div>
             </article>
 
             <!-- Flex Box -->
-            <article>
+            <article style="height: 300px;">
                 <h3>Usar display: flex para posicionar duas caixas</h3>
                 <p>
-                    Esta seção utiliza estilos de desafio alternados para mostrar como usar o CSS para posicionar elementos de maneira flexível. Primeiro, o desafio explicará a teoria. Em seguida, aplicaremos o conceito aprendido em um desafio prático usando um tweet simples.
+                    Esta seção utiliza estilos de desafio alternados para mostrar como usar o CSS para posicionar
+                    elementos de maneira flexível. Primeiro, o desafio explicará a teoria. Em seguida, aplicaremos o
+                    conceito aprendido em um desafio prático usando um tweet simples.
                 </p>
                 <p>
-                    Colocando a propriedade display: flex; em um elemento permite que você use outras propriedades flex para construir uma página responsiva.
+                    Colocando a propriedade display: flex; em um elemento permite que você use outras propriedades flex
+                    para construir uma página responsiva.
                 </p>
                 <div class="box-container">
-                    <div class="box1"><p>BOX 1</p></div>
-                    <div class="box2"><p>BOX 2</p></div>
+                    <div class="box1">
+                        <p>BOX 1</p>
+                    </div>
+                    <div class="box2">
+                        <p>BOX 2</p>
+                    </div>
                 </div>
             </article>
 
             <!-- Criando Tweet embed -->
             <article>
-                
+                <div class="text">
+                    <h3>Adicionando Flex Box aos elementos</h3>
+                    <p>
+                        Para uso do recurso Flex Box, adicione a tag pai a propriedade: <span class="code-css">display:
+                            flex;</span>.
+                    </p>
+                    <p>
+                        Às vezes, os flex items dentro de um flex container não preenchem todo o espaço no disponível no
+                        contêiner. É comum querer dizer ao CSS como alinhar e espaçar os flex items de uma certa
+                        maneira. Felizmente, a propriedade justify-content tem várias opções para fazer isso. Antes, no
+                        entanto, há uma terminologia importante para entender antes de aprender essas opções.
+                    </p>
+                    <p>
+                        Existem várias opções para espaçar os flex items ao longo da linha que for o eixo principal. Uma
+                        dos mais usadas é justify-content: center;, que alinha todos os flex items ao centro dentro do
+                        flex container. As demais opções são:
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="reference">flex-start:</span> alinha os itens no início do contêiner. Para linhas, os flex items são
+                            empurrados para a esquerda do flex container. Para colunas, os flex items são empurrados
+                            para o topo do flex container. Este é o alinhamento padrão se nenhum valor for especificado
+                            para justify-content.
+                        </li>
+                        <li>
+                            <span class="reference">flex-end:</span> alinha itens no final do contêiner. Para linhas, os flex items são empurrados para
+                            a direita do flex container. Para colunas, os flex items são empurrados para a parte
+                            inferior do flex container.
+                        </li>
+                        <li>
+                            <span class="reference">space-between:</span> alinha os itens ao centro do eixo principal, com um espaçamento entre os
+                            itens. O primeiro item e o último são empurrados até a borda do flex container. Por exemplo,
+                            quando a direção do flex container for em linha, o primeiro item fica do lado esquerdo do
+                            contêiner e o último item fica no lado direito do contêiner. Então, o espaço restante é
+                            distribuído igualmente para os demais itens.
+                        </li>
+                        <li>
+                            <span class="reference">space-around:</span> similar ao space-between mas os primeiros e últimos itens não ficam grudados
+                            nas bordas do flex container, o espaço é distribuído em torno de todos os itens com metade
+                            do espaço em cada extremidade do flex container.
+                        </li>
+                        <li>
+                            <span class="reference">space-evenly:</span> distribui o espaço igualmente entre os flex items com um espaço completo em
+                            cada extremidade do flex container.
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-card">
+                    <div class="card">
+                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+
+                        <div class="profile-name">
+                            <h3>Rafael Dantas</h3>
+                            <h4>@Programador89</h4>
+                        </div>
+                        <div class="text-pessoal">
+                            <p>Graduado em Analise e desenvolvimento de sistemas pela Universidade Abeu de Ensinos.
+                                Tenho
+                                experiência em construção de sites com WordPress, suporte ao usuário, treinamento e
+                                levantamento de requisitos para correção bugs.
+                            </p>
+                            <hr>
+                            <p>Conhecimento em ERP: Protheus (TOTVS)</p>
+                            <caption>Módulos:</caption>
+                            <ul>
+                                <li>Controle de Lojas </li>
+                                <li>Financeiro</li>
+                                <li>Compras</li>
+                                <li>Estoque </li>
+                                <li>Faturamento</li>
+                            </ul>
+                            <div class="skills">
+                                <p>Aprimorando meus conhecimentos em C#, HTML5, CSS3 e WordPress.
+                                    <br><a href="https://github.com/Programador89" target="_blank">GitHub
+                                        Programador89</a>
+                                <p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+
+                        <div class="profile-name">
+                            <h3>Rafael Dantas</h3>
+                            <h4>@Programador89</h4>
+                        </div>
+                        <div class="text-pessoal">
+                            <p>Graduado em Analise e desenvolvimento de sistemas pela Universidade Abeu de Ensinos.
+                                Tenho
+                                experiência em construção de sites com WordPress, suporte ao usuário, treinamento e
+                                levantamento de requisitos para correção bugs.
+                            </p>
+                            <hr>
+                            <p>Conhecimento em ERP: Protheus (TOTVS)</p>
+                            <caption>Módulos:</caption>
+                            <ul>
+                                <li>Controle de Lojas </li>
+                                <li>Financeiro</li>
+                                <li>Compras</li>
+                                <li>Estoque </li>
+                                <li>Faturamento</li>
+                            </ul>
+                            <div class="skills">
+                                <p>Aprimorando meus conhecimentos em C#, HTML5, CSS3 e WordPress.
+                                    <br><a href="https://github.com/Programador89" target="_blank">GitHub
+                                        Programador89</a>
+                                <p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/freeCode/img/Perfil.png" class="profile-thumbnail">
+
+                        <div class="profile-name">
+                            <h3>Rafael Dantas</h3>
+                            <h4>@Programador89</h4>
+                        </div>
+                        <div class="text-pessoal">
+                            <p>Graduado em Analise e desenvolvimento de sistemas pela Universidade Abeu de Ensinos.
+                                Tenho
+                                experiência em construção de sites com WordPress, suporte ao usuário, treinamento e
+                                levantamento de requisitos para correção bugs.
+                            </p>
+                            <hr>
+                            <p>Conhecimento em ERP: Protheus (TOTVS)</p>
+                            <caption>Módulos:</caption>
+                            <ul>
+                                <li>Controle de Lojas </li>
+                                <li>Financeiro</li>
+                                <li>Compras</li>
+                                <li>Estoque </li>
+                                <li>Faturamento</li>
+                            </ul>
+                            <div class="skills">
+                                <p>Aprimorando meus conhecimentos em C#, HTML5, CSS3 e WordPress.
+                                    <br><a href="https://github.com/Programador89" target="_blank">GitHub
+                                        Programador89</a>
+                                <p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
